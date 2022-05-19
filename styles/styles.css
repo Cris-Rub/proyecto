@@ -26,16 +26,26 @@
 }
 
 body{
-    background-color: #40798C;
+    background-color: #EFF6E0;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
 }
 
-footer{
-    font-family: 'Roboto', sans-serif;
+footer a{
     text-decoration: none;
     color: white;
-    background-color: #1F363D;
+}
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #01161E;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
 }
 
 .no-link{
@@ -47,38 +57,39 @@ footer{
     width: 75px;
     flex-grow: 1;
 }
-.buscador{
-    width:fit-content;
-    flex-grow: 2;
-}
-
-.navbar-items{
-    color: #F0EEEF;
-    flex-grow: 1;
-    align-items: flex-end;
+#no-style{
     text-decoration: none;
 }
 
-/* #live{
-
+/* .buscador{
+    width:fit-content;
 } */
+
+.navbar-items{
+    color: #F0EEEF;
+    align-items: flex-end;
+    text-decoration: none;
+}
 
 .encabezado{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
+    align-content: space-around;
+    justify-content:space-evenly;
 }
 
-
+main{
+    height: 100%;
+}
 
 .historias{
     font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
     
 }
 
@@ -86,12 +97,15 @@ footer{
     background-color: #FEFAE0;
     width: 100px;
     height: 50%;
-    border: solid 5px #70A9A1;
+    border: solid 5px #124559;
     border-radius: 50%;
     margin: 0.5rem;
 }
 .no-hist img{
-    border: solid 5px #CFE0C3;
+    border: solid 5px #AEC3B0;
+}
+.follows img:hover{
+    opacity: 0.5;
 }
 .follows{
     display: grid;
@@ -99,17 +113,22 @@ footer{
     grid-auto-flow: row dense;
     text-align: center;
 }
+.follows a{
+    text-decoration: none;
+    color: black;
+}
 
 .imagenes{
+    color: #344E41;
     justify-content: center;
     display:grid;
     grid-template-rows: auto;
-    gap: 1rem;
-    grid-auto-flow: row dense;
+    gap: 1.5rem;
+    grid-auto-flow: row dense; /*LLenar con filas*/
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
 }
 
 .item img{
@@ -118,9 +137,12 @@ footer{
     width: 100%;
     height: 95%;
     object-fit: cover;
-    display: block;
+    display: block; /*Generar cuadro al elemento*/
     box-shadow:0 1px 2px 0 rgba(0,0,0,0.22);
     border-radius: 0.5rem;
+}
+.item img:hover{
+    opacity: 0.5;
 }
 
 .item:nth-child(11n+1){
